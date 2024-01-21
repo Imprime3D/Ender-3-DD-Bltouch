@@ -77,7 +77,6 @@
  */
 
 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
-//#define SHOW_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
 #define SHOW_CUSTOM_BOOTSCREEN
@@ -625,9 +624,6 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp 24.28
-    #define DEFAULT_Ki 1.80
-    #define DEFAULT_Kd 82.09
   #endif
 #endif
 
@@ -1578,6 +1574,7 @@
 // The size of the printable area
 #define X_BED_SIZE 235
 #define Y_BED_SIZE 235
+#define Y_BED_SIZE 207 //235
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -8
